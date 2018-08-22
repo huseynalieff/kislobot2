@@ -352,6 +352,13 @@ client.on('message', msg => {
    	msg.reply('hep iyi ol :muscle:    ');
   }
 	
+if (msg.content === 'seni seviyorum') {
+   	msg.reply('sevenler hep gitti ama :smoking: ');
+  }
+	if (msg.content === 'kislo') {
+   	msg.reply('efendim?');
+  }
+	
 });
 
 client.login(process.env.BOT_TOKEN);
