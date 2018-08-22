@@ -303,19 +303,19 @@ client.on('message', msg => {
   }
 
   if (msg.content === 'bye bye') {
-   	msg.reply('su gibi git su gibi gel');
+   	msg.reply('su gibi git su gibi gel :kissing_heart: ');
   }
   
    if (msg.content === 'bb') {
-   	msg.reply('su gibi git su gibi gel');
+   	msg.reply('su gibi git su gibi gel :kissing_heart: ');
   }
   
    if (msg.content === 'bye') {
-   	msg.reply('su gibi git su gibi gel');
+   	msg.reply('su gibi git su gibi gel :kissing_heart: ');
   }
 
   if (msg.content === 'günaydın') {
-   	msg.reply('sana da günaydın');
+   	msg.reply('sana da günaydın :hand_splayed: ');
   }
 
   if (msg.content === 'herkese günaydın') {
@@ -337,6 +337,21 @@ client.on('message', msg => {
   if (msg.content === 'güle güle') {
    	msg.reply('sana da güle güle');
   }
+	
+	if (msg.content === 'napıyorsun') {
+   	msg.reply('oturuyoruz napalım discord izliyorum :unamused: ');
+  }
+	if (msg.content === 'nasılsın?') {
+   	msg.reply('çok iyi ya sen? :slight_smile:  ');
+  }
+	
+	if (msg.content === 'kötü') {
+   	msg.reply('niye noldu? :slight_frown:   ');
+  }
+	if (msg.content === 'iyi') {
+   	msg.reply('hep iyi ol :muscle:    ');
+  }
+	
 });
 
 client.login(process.env.BOT_TOKEN);
