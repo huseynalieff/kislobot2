@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+
 exports.run = (client, message) => {
   if (message.channel.type !== 'dm') {
     const ozelmesajkontrol = new Discord.RichEmbed()
