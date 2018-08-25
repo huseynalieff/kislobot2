@@ -60,7 +60,7 @@ client.on('message', msg => {
   if (msg.content === 'amk') {
    msg.delete(30)
     msg.reply('Küfür Engellendi!');
-	  msg.reply.delete(80)
+	
   }
 });
 
