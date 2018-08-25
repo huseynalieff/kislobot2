@@ -78,13 +78,6 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'sg') {
-   msg.delete(30)
-    msg.reply('Küfür Engellendi!');
-  }
-});
-
-client.on('message', msg => {
   if (msg.content === 'bot sahibi') {
    
     msg.reply('Benim sahibim Kislo#1441!');
@@ -130,7 +123,13 @@ client.unload = command => {
 };
 
 client.on('message', msg => { 
-  if (msg.content === 'sa') {
+  if (msg.content === 'selam') {
+    msg.reply('Aleyküm selam hoş geldin! :slight_smile: ');
+  }
+});
+
+client.on('message', msg => { 
+  if (msg.content === 'Selam') {
     msg.reply('Aleyküm selam hoş geldin! :slight_smile: ');
   }
 });
@@ -169,7 +168,7 @@ client.on('guildMemberAdd', member => {
 });
 
 client.on('message', msg => {
-  if (msg.content === prefix + 'aman') {
+  if (msg.content === prefix + 'amanaman') {
   	if (msg.author.bot) return;
    	msg.reply('Yardım Sayfasına Git https://ugurkilci.github.io/RamazanBot/');
   }
@@ -242,21 +241,6 @@ client.on('message', msg => {
    	}
   }
 
-  if (msg.content === 'of') {
-   	msg.reply('Oflama geçer bugünler!');
-  }
-
-  if (msg.content === 'ah') {
-   	msg.reply('Ah deme oh de!');
-  }
-
-  if (msg.content === 'oh') {
-   	msg.reply('Oh deme püf de!');
-  }
-
-  if (msg.content === 'püf') {
-   	msg.reply('Git, Barış MANÇO nun -Lambaya Püf De- dinle!');
-  }
 
   if (msg.content === 'iftara ne kadar var') {
    	msg.reply('Şimdi öğren -> https://iftaranekadarkaldi.com/');
@@ -302,15 +286,7 @@ client.on('message', msg => {
    	msg.reply('ve aleyküm selam');
   }
 
-  if (msg.content === 'bye bye') {
-   	msg.reply('su gibi git su gibi gel :kissing_heart: ');
-  }
-  
-   if (msg.content === 'bb') {
-   	msg.reply('su gibi git su gibi gel :kissing_heart: ');
-  }
-  
-   if (msg.content === 'bye') {
+   if (msg.content === 'hoşçakal') {
    	msg.reply('su gibi git su gibi gel :kissing_heart: ');
   }
 
@@ -338,7 +314,7 @@ client.on('message', msg => {
    	msg.reply('sana da güle güle');
   }
 	
-	if (msg.content === 'napıyorsun') {
+   if (msg.content === 'napıyorsun') {
    	msg.reply('oturuyoruz napalım discord izliyorum :unamused: ');
   }
 	if (msg.content === 'nasılsın?') {
