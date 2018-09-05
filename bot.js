@@ -49,6 +49,24 @@ client.reload = command => {
 };
 
 
+client.on("guildMemberAdd", member => {
+	
+	var channel = member.guild.channels.find("name", "hoşgeldiniz");
+	if (!channel) return;
+	
+	var role = member.guild.roles.find("name", "üye");
+	if (!role) return;
+	
+	member.addRole(role); 
+	
+	channel.send(member + " artık " + role + " rolü ile aramızda");
+	
+	
+	
+});
+
+
+
 client.on('message', msg => {
   if (msg.content === 'discord.gg') {
    msg.delete(30)
