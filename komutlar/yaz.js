@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 exports.run = (client, message, args) => {
-  if (!message.guild) {
+	if (!message.guild) {
   const ozelmesajuyari = new Discord.RichEmbed()
   .setColor(0xFF0000)
   .setTimestamp()
