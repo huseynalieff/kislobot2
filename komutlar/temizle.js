@@ -10,7 +10,7 @@ exports.run = function(client, message, args) {
   .setAuthor(message.author.username, message.author.avatarURL)
   .addField(':warning: Uyarı :warning:', '`temizle` adlı komutu özel mesajlarda kullanamazsın.')
   return message.author.sendEmbed(ozelmesajuyari); }
-      if (!args[0]) {
+      if (isNaN(args[0])) {
             message.reply(":warning: Kaç mesaj sileceğimi belirtmedin.")
             return
         }
@@ -19,7 +19,7 @@ exports.run = function(client, message, args) {
             message.channel.send(":warning: 99'dan fazla mesaj silemem.")
             return
         }
-message.channel.bulkDelete(args[0] + 1);
+message.channel.bulkDelete(args[0]);
 message.channel.send(args[0]+" adet mesaj sildim :muscle: ").then(msg => {
     msg.delete(5000)
 })
